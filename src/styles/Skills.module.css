@@ -1,0 +1,96 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    flex-direction: column;
+}
+
+.container .title {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.container .title > span {
+    color: var(--primary);
+}
+
+.containerTabs {
+    width: 80%;
+}
+
+.containerTabs .TabList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: none;
+    margin-top: 2rem;
+}
+
+.containerTabs .tab {
+    font-weight: 700;
+    border-radius: 5px;
+    color: #000;
+    background: #EDF2F8; 
+    border: none;
+    transition: .3s ease;
+}
+
+.tab.active {
+    color: #fff;
+    background-color: #173063;
+}
+
+.container .imgLeft {
+    min-width: 700px;
+    min-height: 700px;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.containerTabs .tab:hover {
+    transition: .3s ease;
+    background: var(--primary);
+    color: #fff;
+}
+
+.containerTabs .panels {
+    display: flex;
+    justify-content: center;
+}
+
+.containerTabs .TabPanel {
+    width: 90%;
+    height: 400px;
+    display: grid;
+    margin-top: 2rem;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+}
+
+@media (max-width: 1058px) {
+
+    .container {
+        padding-top: 100px;
+    }
+
+    .containerTabs {
+        width: 100%;
+    }
+
+    .containerTabs .TabPanel {
+    min-height: 800px;
+    place-items: center;
+    height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .container .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+}

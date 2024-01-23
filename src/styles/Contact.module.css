@@ -1,0 +1,195 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #EDF2F8;
+    margin-top: 8rem;
+    padding-top: 40px;
+}
+
+.container.active {
+    background: #0f1624;
+}
+
+.container .title {
+    padding: 80px 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.container .title>span {
+    color: var(--primary);
+}
+
+.container .containerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 600px;
+}
+
+.container .containerFlex>div {
+    width: fit-content;
+    min-height: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container .containerFlex>div>.socials {
+    display: flex;
+    width: 40%;
+    gap: 1rem;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.container .containerFlex>div>.socials > a {
+    background: #00a0dc;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    min-width: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 15px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.container .containerFlex>div>.socials > a:nth-child(2) {
+    background: #373b41;
+}
+
+.container .containerFlex>div>.socials > a:nth-child(3) {
+    background: #e53e3e;
+}
+
+.container .containerFlex>div>form {
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    gap: 2rem;
+}
+
+.container .containerFlex>div>form>input {
+    background: #fff;
+    color: #000;
+    padding: 8px;
+    box-shadow: var(--chakra-shadows-sm);
+    border-radius: 3px;
+    padding-left: 20px;
+}
+
+.container .containerFlex>div>form>input::placeholder {
+    color: #000;
+}
+
+.container .containerFlex>div>form>textarea::placeholder {
+    color: #000;
+}
+
+.container .containerFlex>div>form>.submit {
+    background: var(--primary);
+    padding: 8px 0;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.container .containerFlex>div>form>textarea {
+    color: initial;
+    background-color: #fff;
+    padding: 8px;
+    padding-left: 20px;
+    resize: none;
+}
+
+.container .containerFlex>div>form>.submit:hover {
+    transition: .3s ease;
+    background-color: rgb(23, 48, 99);
+
+}
+
+.container .containerFlex img {
+    width: 600px;
+}
+
+.container .footer {
+    text-align: center;
+    margin: 80px 0;
+    font-size: .9rem;
+}
+
+@media (max-width: 1035px) {
+    .container .containerFlex {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .containerFlex > div {
+        width: 90%;
+    }
+
+    .container .containerFlex > img {
+        width: 800px;
+    }
+
+    .container .containerFlex>div>.socials {
+        margin: 4rem 0;
+    }
+
+    .container .containerFlex>div>form {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .container .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .container .title {
+        text-align: center;
+    }
+
+    .container .containerFlex > div {
+        width: 100%;
+    }
+
+    .container .containerFlex>div>form {
+        width: 90%;
+    }
+
+    .container .containerFlex>div>.socials {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container .containerFlex>div>.socials {
+        margin-top: 10rem;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .container .containerFlex>div>.socials > a{
+        width: 100%;
+    }
+}

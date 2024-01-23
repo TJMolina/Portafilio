@@ -1,0 +1,14 @@
+.container .tab {
+    font-weight: 700;
+    border-radius: 5px;
+    color: #000;
+    background: #EDF2F8;
+    border: none;
+    transition: .5s ease;
+}
+
+.container .tab:hover {
+    transition: .5s ease;
+    background: var(--primary);
+    color: #fff;
+}

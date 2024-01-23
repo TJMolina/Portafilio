@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    padding-top: 4.063rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    background-color: #edf2f8;
+    padding: 2%;
+}
+
+.container.active {
+    background: #0f1624;
+}
+
+.container .presentation p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.container .presentation h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.container .presentation h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.container .presentation a {
+    font-size: 1.1rem;
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: .3s ease;
+}
+
+.container .presentation a:hover {
+    transition: .3s ease;
+    border-color: var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.container .image {
+    max-width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 5px solid ; */
+    transition: .5s ease;
+    margin-left: 2rem;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+    }
+
+    .container .image {
+        margin-left: 0;
+        width: 80%;
+        margin: 5rem 0;
+    }
+
+    .container .presentation {
+        width: 90%;
+        text-align: left;
+    }
+
+    .container .presentation p {
+        font-size: 1.2rem;
+    }
+
+    .container .presentation h1 {
+        font-size: 2.2rem;
+    }
+
+    .container .presentation h2 {
+        font-size: 1.5rem;
+    }
+
+}

@@ -1,0 +1,41 @@
+:root {
+    --primary: #FECC01;
+}
+
+.box {
+    position: fixed;
+    padding: 15px;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+}
+
+.box > a {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+    transition: ease .5s;
+}
+
+.box > a:hover {
+    transition: ease .5s;
+    border-color: var(--primary);
+    background-color: transparent;
+    color: var(--primary) !important;
+}
+
+.arrow {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}

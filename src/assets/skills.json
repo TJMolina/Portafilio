@@ -1,0 +1,87 @@
+[
+    {
+        "img": "html",
+        "title": "HTML5",
+        "category": "frontend"
+    },
+    {
+        "img": "css",
+        "title": "CSS3",
+        "category": "frontend"
+    },
+    {
+        "img": "javascript",
+        "title": "Javascript",
+        "category": ["frontend","backend"]
+    },
+    {
+        "img": "react",
+        "title": "React",
+        "category": "frontend"
+    },
+    {
+        "img": "chakra",
+        "title": "Chakra UI",
+        "category": "frontend"
+    },
+    {
+        "img": "tailwind",
+        "title": "Tailwind",
+        "category": "frontend"
+    },
+    {
+        "img": "nodejs",
+        "title": "NodeJS",
+        "category": "backend"
+    },
+    {
+        "img": "csharp",
+        "title": "C#",
+        "category": "backend"
+    },
+    {
+        "img": "express",
+        "title": "ExpressJS",
+        "category": "backend"
+    },
+    {
+        "img": "ejs",
+        "title": "EJS",
+        "category": ["frontend","backend"]
+    },
+    {
+        "img": "mongodb",
+        "title": "MongoDB",
+        "category": "backend"
+    },
+    {
+        "img": "mongoose",
+        "title": "Mongoose",
+        "category": "backend"
+    },
+    {
+        "img": "mysql",
+        "title": "MySQL",
+        "category": "backend"
+    },
+    {
+        "img": "git",
+        "title": "GIT",
+        "category": "backend"
+    },
+    {
+        "img": "npm",
+        "title": "NPM",
+        "category": "backend"
+    },
+    {
+        "img": "docker",
+        "title": "Docker",
+        "category": "backend"
+    },
+    {
+        "img": "console",
+        "title": "Console",
+        "category": "backend"
+    }
+]
